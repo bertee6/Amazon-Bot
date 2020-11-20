@@ -43,7 +43,7 @@ class AmazonBot:
     def log_on(self):
         """First, we must log into our Amazon account"""
         # Go to Amazon
-        self.driver.get('https://amazon.couk')
+        self.driver.get('https://amazon.co.uk')
         sleep(2)
         # Log in
         self.driver.find_element_by_xpath('/html/body/div[1]/header/div/div[1]/div[2]/div/a[2]/span[1]').click()
@@ -69,7 +69,7 @@ class AmazonBot:
 
     # This method buys all the stuff
     def purchase(self):
-        items = ["ramen x2 spicy", "sweet spicy chili doritos", "guitar capo"]  # Replace this with whatever you want to buy
+        items = ["ps5", "playstation 5"]  # Replace this with whatever you want to buy
         for i in range(0, len(items)):  # The for loop that does your shopping
             self.driver.find_element_by_xpath(
                 '/html/body/div[1]/header/div/div[1]/div[3]/div/form/div[3]/div[1]/input').send_keys(
