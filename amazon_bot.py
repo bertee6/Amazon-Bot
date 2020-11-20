@@ -43,7 +43,7 @@ class AmazonBot:
     def log_on(self):
         """First, we must log into our Amazon account"""
         # Go to Amazon
-        self.driver.get('https://amazon.com')
+        self.driver.get('https://amazon.couk')
         sleep(2)
         # Log in
         self.driver.find_element_by_xpath('/html/body/div[1]/header/div/div[1]/div[2]/div/a[2]/span[1]').click()
@@ -96,7 +96,7 @@ class AmazonBot:
                 # just add to car straightaway
                 self.driver.find_element_by_id('add-to-cart-button').click()
             sleep(1)
-            self.driver.get('https://amazon.com')  # Go back to the main page to buy more stuff
+            self.driver.get('https://amazon.co.uk')  # Go back to the main page to buy more stuff
 
         sleep(2)
         # Once we have our cart filled out, we can check out
